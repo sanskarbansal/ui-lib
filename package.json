@@ -1,0 +1,29 @@
+{
+    "name": "ui-lib",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./lib/cjs/index.js",
+    "module": "./lib/esm/index.js",
+    "types": "./lib/esm/index.d.ts",
+    "files": [
+        "./lib/**/*"
+    ],
+    "scripts": {
+        "build": "npm run build:esm && npm run build:cjs",
+        "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+        "build:esm": "tsc"
+    },
+    "peerDependencies": {
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    },
+    "keywords": [],
+    "author": "Sanskar",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^18.0.12",
+        "@types/react-dom": "^18.0.5",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    }
+}
