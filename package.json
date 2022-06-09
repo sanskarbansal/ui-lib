@@ -11,7 +11,8 @@
     "scripts": {
         "build": "npm run build:esm && npm run build:cjs",
         "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-        "build:esm": "tsc"
+        "build:esm": "tsc",
+        "prepare": "npm run build"
     },
     "peerDependencies": {
         "react": "^18.1.0",
